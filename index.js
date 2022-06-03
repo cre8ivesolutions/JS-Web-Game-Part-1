@@ -17,13 +17,12 @@ function newImage(imageLocation, leftPosition, bottomPosition){
 }
 
 function newItem(imageLocation, leftPosition, bottomPosition ){
-    let object = newImage(imageLocation, leftPosition, bottomPosition)
+    let item = newImage(imageLocation, leftPosition, bottomPosition)
  
-    object.addeventlistenter('click', () => {
-        object.remove()
+    item.addeventlistenter('dblclick', () => {
+        item.remove()
     })
 }
-
 let horizon = window.innerHeight / 1.75
 let heightOfSky = window.innerHeight-horizon
 let heightOfGrass = horizon
@@ -39,7 +38,5 @@ newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
 
 newItem('assets/sword.png', 500, 405)
-newItem('assets/sheild.png', 165, 185)
+newItem('assets/shield.png', 165, 185)/* I could not get this line and the next line of code to work to show the shield and staff*/
 newItem('assets/staff.png', 600, 100)
-
-
