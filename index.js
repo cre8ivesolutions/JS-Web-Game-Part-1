@@ -19,7 +19,7 @@ function newImage(imageLocation, leftPosition, bottomPosition){
 function newItem(imageLocation, leftPosition, bottomPosition ){
     let item = newImage(imageLocation, leftPosition, bottomPosition)
  
-    item.addeventlistenter('dblclick', () => {
+    item.addeventlistenter('click', () => {
         item.remove()
     })
 }
